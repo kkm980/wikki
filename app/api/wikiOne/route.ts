@@ -42,7 +42,8 @@ export async function POST(request: NextRequest, { params }) {
       return response;
     } else {
       // User is not logged in, return a 404 status and message
-      return { message: "Not logged in", customStatus: "404" };
+      // return { message: "Not logged in", customStatus: "404" };
+      return NextResponse.json({ error: "Not loggedin" }, { status: 404 });
     }
   } catch (error) {
     // Handle unexpected errors and return a 500 Internal Server Error response

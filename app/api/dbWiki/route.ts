@@ -63,7 +63,8 @@ export async function POST(request: NextRequest, { params }) {
       return NextResponse.json(wikis);
     } else {
       // Handle errors when there is no user session
-      return { message: "User session not found", customStatus: "401" };
+      // return { message: "User session not found", customStatus: "401" };
+      return NextResponse.json({ error: "Not loggedin" }, { status: 404 });
     }
   } catch (error: any) {
     // Handle unexpected errors and return a 500 Internal Server Error response
