@@ -109,7 +109,7 @@ export default function Home() {
             </div>
             
             {
-              openDatePicker && <div className="absolute"><DateRangePicker {...{dateRange, setDateRange}}/></div>
+              openDatePicker && chartTime==='weekly' && <div className="absolute"><DateRangePicker {...{dateRange, setDateRange}}/></div>
             }
           </div>
         </div>
