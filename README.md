@@ -17,7 +17,6 @@ git clone https://github.com/kkm980/wikki.git
 
 ```bash
 cd wikki
-npm install
 ```
 
 3. Install the required dependencies using NPM:
@@ -35,7 +34,7 @@ npm run dev
 This command will launch the application on your local host, accessible at port 3000.
 
 
-#### Features Key points for developers-
+### Features Key points for developers-
 Now that Wikki is up and running, let's explore some of its key features that make it stand out as a Wikipedia search application:
 1. Display Toggle between DARK and LIGHT Mode
 Wikki offers a visually pleasing user experience with a display toggle feature, allowing users to switch between dark and light modes according to their preferences.
@@ -97,7 +96,7 @@ In the development of Wikki, several design choices were made:
 ## Conclusion
 Wikki is more than just a Wikipedia search application; it's a showcase of modern web development practices, security, and user experience design. With its rich feature set, scalability, and thoughtful design choices, Wikki aims to provide users with a seamless and efficient way to explore the world of Wikipedia. Give it a try and start searching with Wikki today!
 
-[Explore Wiki](https://wikki.vercel.app/)
+[Explore Wikki](https://wikki.vercel.app/)
 
 [Github Repository](https://github.com/kkm980/wikki)
 
