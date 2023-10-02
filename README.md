@@ -46,3 +46,11 @@ It will make the application run on your local host at port 3000
 #### Backend- Next.js API, MongoDB
 #### External libraries- Axios, Mongoose, Shadcn UI, Chart.js, Google Auth 2.0, Cors, cookie-parser, date-fns, moment.js, next-auth, react-date-range, react-dom
 #### Tools- VSC, MongoDB Cluster, NPM, Vercel, Google developer console
+
+## Why this not that?
+
+- Instead of Material UI, I chose shadCn UI, because material UI uses 16 or below version of react and Next.js uses above 18. So it creates conflict issue on dependency.
+- Instead of using Node.js, Express.js I used Next.js v13.4 API as it comes handy to create complete frontend and backend under one deployemnt and hosting with Next.js
+- Instead of using Passport.js with Google Auth 2.0, I went with Next.js own Next-auth with Google Auth 2.0 as it is least code3 needed, most upgraded and actively supported by in-house Next.js rather than passport.js which works good with react.
+- Instead of deploying on AWS Elastic, I chose Vercel as it is just one click deployment without any issue.
+- I didnot use any .env file so as to keep the application ready to be created and working on any localhost after cloning.
