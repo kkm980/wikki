@@ -8,6 +8,7 @@ import ScrollBox from "../../components/ScrollArea.jsx";
 import ContentText from "../../components/ContentText.jsx";
 import DropDownMenu from "../../components/DropDownMenu.jsx";
 import DateRangePicker from "../../components/DateRangePicker.jsx";
+import {dateType, chartType} from "../../utils/typeEnums.js";
 
 export default function Home() {
   const [usernameFromApiReq, setUsernameFromApiReq] = useState("");
@@ -27,20 +28,6 @@ export default function Home() {
       key: 'selection',
     },
   );
-
-  const dateType = {
-    twentyfourHours: 'day',
-    oneMonth: 'month',
-    oneWeek: 'week',
-    oneHour: 'hour'
-  };
-
-  const chartType = {
-    daily: 0,
-    weekly: 1,
-    monthly: 2,
-    hourly: 3
-  };
 
   useEffect(() => {
     const fetchData = async () => {
