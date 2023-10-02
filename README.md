@@ -83,8 +83,9 @@ Now, let's dive into how Wikki functions:
 In the development of Wikki, several design choices were made:
 
 - UI Library: Instead of Material UI, Shadcn UI was chosen to avoid conflicts with React versions. Material UI uses React 16 or below, whereas Next.js uses React 18 and above.
+Advantage with Shadcn UI is that it gives us liberty to customise the imported components as well.
 
-- Backend Framework: Next.js v13.4 API was chosen for its convenience in creating both frontend and backend components, simplifying deployment and hosting.
+- Backend Framework: Next.js v13.4 API was chosen for its convenience in creating both frontend and backend components, simplifying deployment and hosting over Express and Node.js.
 
 - Authentication: Next.js's own Next-auth with Google Auth 2.0 was preferred over Passport.js due to its simplicity, up-to-date support, and alignment with the Next.js ecosystem.
 
