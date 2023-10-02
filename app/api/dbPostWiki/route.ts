@@ -1,7 +1,6 @@
 import { AuthOptions, getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from 'next/server';
 import { authOptions, handler } from "../auth/[...nextauth]/route";
-import axios from 'axios'; // Use ES6 import syntax
 import connectDB from "../../../lib/mongodb";
 import mongoose from "mongoose";
 

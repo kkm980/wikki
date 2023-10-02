@@ -1,12 +1,13 @@
 "use client"
 
 import React, { useState, useRef } from "react";
-import "tailwindcss/tailwind.css";
-import { useTheme } from "next-themes";
-import ModeToggle from "./Toggle";
-import SearchInput from "./SearchInput";
 import axios from "axios";
-import SignInButton from "./SignInButton";
+import "tailwindcss/tailwind.css";
+
+import { useTheme } from "next-themes";
+import ModeToggle from "./Toggle.jsx";
+import SearchInput from "./SearchInput.jsx";
+import SignInButton from "./SignInButton.tsx";
 
 export default function NavBar() {
   const { resolvedTheme } = useTheme();

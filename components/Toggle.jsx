@@ -1,5 +1,7 @@
-"use client"
+// components/Toggle.jsx
 
+// Import necessary modules and components
+"use client"
 import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
@@ -10,27 +12,35 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 
+// Define the ModeToggle component
 export default function ModeToggle() {
+  // Retrieve theme-related data using the useTheme hook
   const { setTheme, resolvedTheme } = useTheme();
+
+  // Initialize the curr_theme state with the "light" theme as default
   const [curr_theme, setCurr_theme] = React.useState("light");
 
+  // Effect to set the initial theme to "light" when the component mounts
   React.useEffect(() => {
     setTheme("light");
   }, []);
 
+  // Effect to update the curr_theme state when the resolvedTheme changes
   React.useEffect(() => {
-    // Update the curr_theme state when resolvedTheme changes
     setCurr_theme(resolvedTheme);
   }, [resolvedTheme]);
 
+  // Render the ModeToggle component
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
+        {/* Button component with conditional styling based on the current theme */}
         <Button
           variant="outline"
           size="icon"
           style={{ backgroundColor: curr_theme === "dark" ? "black" : "white" }}
         >
+          {/* Render Moon icon for dark theme and Sun icon for light theme */}
           {curr_theme === "dark" ? (
             <Moon
               className="h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-white"
@@ -47,4 +57,3 @@ export default function ModeToggle() {
     </DropdownMenu>
   );
 }
-

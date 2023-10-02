@@ -1,5 +1,5 @@
-import { ThemeProvider } from "../components/ThemeProvider";
-import NavBar from "../components/NavBar";
+import { ThemeProvider } from "../components/ThemeProvider.jsx";
+import NavBar from "../components/NavBar.jsx";
 import Providers from "../components/Providers";
 
 export default function RootLayout({ children }) {

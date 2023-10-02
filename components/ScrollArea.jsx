@@ -1,9 +1,8 @@
 "use client"
 import * as React from "react";
 import axios from 'axios'; // Use ES6 import syntax
-import { ScrollArea } from "../components/ui/scroll-area";
-import { Separator } from "../components/ui/separator";
-import DialogueBox from "./DialogueBox";
+import { ScrollArea } from "./ui/scroll-area";
+import { Separator } from "./ui/separator";
 import { useTheme } from 'next-themes';
 const moment = require('moment');
 import {

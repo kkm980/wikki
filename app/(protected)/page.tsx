@@ -1,13 +1,13 @@
 "use client";
-
-import LineChart from "../../components/Chart";
-import "tailwindcss/tailwind.css";
-import ScrollBox from "../../components/ScrollArea";
-import ContentText from "../../components/ContentText";
-import DropDownMenu from "../../components/DropDownMenu";
-import axios from "axios";
 import { useEffect, useState } from "react";
-import DateRangePicker from "../../components/DateRangePicker";
+import axios from "axios";
+
+import LineChart from "../../components/Chart.jsx";
+import "tailwindcss/tailwind.css";
+import ScrollBox from "../../components/ScrollArea.jsx";
+import ContentText from "../../components/ContentText.jsx";
+import DropDownMenu from "../../components/DropDownMenu.jsx";
+import DateRangePicker from "../../components/DateRangePicker.jsx";
 
 export default function Home() {
   const [usernameFromApiReq, setUsernameFromApiReq] = useState("");

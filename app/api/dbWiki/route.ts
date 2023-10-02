@@ -2,7 +2,6 @@ import { AuthOptions, getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from 'next/server';
 import connectDB from "../../../lib/mongodb";
 import mongoose from "mongoose";
-import axios from 'axios';
 import { authOptions } from "../auth/[...nextauth]/route";
 
 // Connect to the MongoDB database

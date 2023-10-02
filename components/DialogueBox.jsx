@@ -1,13 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { Button } from "../components/ui/button";
+import { Button } from "./ui/button";
 import axios from 'axios';
 import {
   Dialog,
   DialogContent,
   DialogTrigger
-} from "../components/ui/dialog";
+} from "./ui/dialog";
 import SkeletonLoader from "./MainPageSkeleton";
 
 export default function DialogueBox({ tag }) {

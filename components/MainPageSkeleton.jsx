@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "tailwindcss/tailwind.css";
 import { useTheme } from 'next-themes'
 function SkeletonLoader({height = "h-4", width = "w-24", rounded='none' }) {
