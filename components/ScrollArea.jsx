@@ -5,6 +5,8 @@ import { ScrollArea } from "./ui/scroll-area";
 import { Separator } from "./ui/separator";
 import { useTheme } from 'next-themes';
 const moment = require('moment');
+import "tailwindcss/tailwind.css";
+
 import {
   Dialog,
   DialogContent,
@@ -50,8 +52,9 @@ export default function ScrollBox({ header, showData, addNewSearchedData }) {
   };
   return (
     <ScrollArea className={`h-72 w-[30%] rounded-lg border ${resolvedTheme === 'dark' ? 'bg-[#27374D] border-[#1F6E8C] text-[#9DB2BF] shadow-[#526D82] shadow-md' : 'bg-white border-black shadow-2xl shadow-blue-300'} rounded-lg`}>
-      <div className="p-4 relative rounded-lg">
-        <h4 className="mb-4 text-xl font-medium leading-none sticky top-0">{header}</h4>
+      <div className="sm:p-1 md:p-4 relative rounded-lg">
+        {/* <div className="mb-4 xs:text-[0.6rem] font-medium leading-none sticky top-0">{header}</div> */}
+        <p className="text-[0.6rem] mb-4 sticky top-0 xs:text-lg sm:text-lg md:text-lg">{header}</p>
         {showData?.length === 0 &&
           <>
             <SkeletonLoader height="h-[30px]" width="w-[200px] rounded-none" />
@@ -70,7 +73,7 @@ export default function ScrollBox({ header, showData, addNewSearchedData }) {
                 <p className="absolute text-[0.6rem] -top-3.5 left-1" style={{color:"red"}}>{formattedDate}</p>
                 <Dialog>
                   <DialogTrigger
-                    className={`block border border-[#4B527E] p-1 rounded-md mb-2 hover:bg-gray px-3 py-2 ${resolvedTheme === 'dark' ? 'hover:bg-gray-300' : 'hover:bg-blue-600'
+                    className={`block border border-[#4B527E] p-1 rounded-md mb-2 hover:bg-gray sm:px-1 md:px-3 py-2 ${resolvedTheme === 'dark' ? 'hover:bg-gray-300' : 'hover:bg-blue-600'
                       } cursor-pointer`}
                     onClick={() => {
                       handleButtonClick(tag.text);

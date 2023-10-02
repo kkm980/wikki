@@ -59,7 +59,7 @@ export default function NavBar() {
       } z-10 font-sans`}
     >
       {/* Left Side */}
-      <div className="ml-4">
+      <div className="sm:ml-1 md:ml-4">
         {/* Your logo or other content goes here */}
         Logo
       </div>
@@ -67,7 +67,7 @@ export default function NavBar() {
       {/* Search Box and Dropdown */}
       <SearchInput {...{ performSearch, searchResults, setSearchResults }} />
       {/* Theme Toggle */}
-      <div className="mr-4 flex gap-3">
+      <div className="sm:mr-1 md:mr-4 flex gap-3">
         <SignInButton />
         <ModeToggle />
       </div>

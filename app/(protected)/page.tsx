@@ -72,7 +72,7 @@ export default function Home() {
   }
 
   return (
-    <main className={`px-8 py-[40px] mt-[60px] font-sans overflow-x-hidden`}>
+    <main className={`sm:px-2 md:px-8 py-[40px] mt-[60px] font-sans overflow-x-hidden`}>
       {!loading && <>
         <div className="flex items-center justify-between mt-[200px]">
           <ContentText />
