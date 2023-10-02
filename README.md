@@ -3,7 +3,7 @@
 Wikki is a powerful Full stack MERN (MongoDB, React.js, Next.js) application designed to facilitate Wikipedia searches and store user's search history. In this technical blog, we'll delve into the features, technology stack, and design choices behind Wikki, an application aimed at providing a seamless Wikipedia search experience.
 
 ### deployed link - [Wikki](https://wikki.vercel.app/)
-
+### demo link - [Demo](https://drive.google.com/file/d/1vFUYtJjOOgYfPVk1dYBv6N5sCmSMqSXd/view?usp=sharing)
 
 ## Installation
 Before we dive into the exciting features of Wikki, let's first get it up and running on your local system. Follow these simple installation steps:
@@ -100,6 +100,8 @@ Wikki is more than just a Wikipedia search application; it's a showcase of moder
 [Explore Wikki](https://wikki.vercel.app/)
 
 [Github Repository](https://github.com/kkm980/wikki)
+
+[Live Demo](https://drive.google.com/file/d/1vFUYtJjOOgYfPVk1dYBv6N5sCmSMqSXd/view?usp=sharing)
 
 [Developer's Profile](https://github.com/kkm980)
 
