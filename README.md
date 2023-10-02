@@ -1,70 +1,48 @@
-Creating an amazing GitHub README file is a great way to showcase your project. Here's a README template for your "Wikipedia Search" project:
+# Wikki - A Wikipedia Search Application
 
-Wikipedia Search
-Welcome to Wikipedia Search, a web application built with Next.js, React, Tailwind CSS, MongoDB, and TypeScript.
+Wikki is a Full stack MERN app to search and store Wikipedia searches done by a user.
+### deployed link - [Wikki](https://wikki.vercel.app/)
 
-Project Demo
 
-Technologies Used
-Next.js v13.4
-React
-Tailwind CSS
-MongoDB
-TypeScript
-Libraries
-Mongoose
-Moment.js
-Shadcn UI (mention version if applicable)
-React Date Picker
-Axios
-React Chart.js
-Google OAuth 2.0
-CORS
-Overview
-Wikipedia Search is a web application that allows users to search for information on Wikipedia. However, to use the search functionality, users are required to sign in.
+## Installation
 
-Features
-User Authentication: Users must sign in to access the search functionality.
-Wikipedia API Integration: Users can search for information on Wikipedia.
-Search History: The application keeps track of user searches for 1 day, 1 hour, and 1 week.
-Search Statistics: A graph displays the total number of searches performed hourly, daily, and weekly, with filtering options.
-Getting Started
-To get started with this project, follow these steps:
+Use the package manager [NPM](https://pip.pypa.io/en/stable/) to install Wikki.
 
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/your-username/wikipedia-search.git
-Install dependencies:
-
-bash
-Copy code
-cd wikipedia-search
+```bash
+git clone https://github.com/kkm980/wikki.git
+cd wikki
 npm install
-Configure your environment variables for MongoDB, Google OAuth 2.0, and other necessary settings.
+```
 
-Run the development server:
-
-bash
-Copy code
+## Running on Local system
+After installing all necessary dependency packages using above command, if you are in `wikki` directory, write below command to run-
+```bash
 npm run dev
-Open your browser and visit http://localhost:3000 to access the application.
+```
+It will make the application run on your local host at port 3000
 
-Usage
-Sign in using your Google account to access the search functionality.
-Perform searches and view the search history and statistics.
-Screenshots
-Screenshot 1
-Screenshot 2
+#### Features Key points for developers-
+- Display toggle feature between DARK and LIGHT mode,
+- Highly secured Auth application using Next.js auth,
+- Complete responsive screen supporting up to 360p resolution devices,
+- This is single page Application(SPA) for sleek and sturdy experience.
+- It is well maintained, structured and scalable code
+- In future, we can add redux for state management,
 
-Contributing
-We welcome contributions from the community. If you'd like to contribute to this project, please follow our Contributing Guidelines.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Working
 
-Acknowledgments
-Thanks to the maintainers of the libraries and tools used in this project.
-Special thanks to [Your Name] for their contributions.
-Feel free to customize this README template to suit your project's specific details and requirements. Include actual links to your project demo, screenshots, and licensing information. Additionally, create a CONTRIBUTING.md file if you have specific guidelines for contributors.
+- Selection between dark mode, light mode display
+- User has to login first with Google Auth to view the dashboard
+- Once loggedin, the user is subjected to the dashboard to see all the past wikki search topics in 1-day, 1-hour and 1 week tabs.
+- There is a Graph distribution for showing the number of searches. The graph can be shown by selecting the 1 day, 1 hour, 1 week and 1 month frame.
+- For 1 week graph, user can customise the duration with start and end time within 1 week.
+- If user selects the time beyond one week with date range selector, then also he will be shown 1 week search results only.
+- User can search for the Wikipedia by typing in the input box or simply clicking on the search topics presented in the search history tabs.
+- User is shown the Wikipedia article after clicking on any topic. Further there is a read more button to go on Wikipedia page for selected topic.
+
+## Tech stack and tools
+#### Frontend- React.js, Next.js v13.4, TailwindCSS, Typescript
+#### Backend- Next.js API, MongoDB
+#### External libraries- Axios, Mongoose, Shadcn UI, Chart.js, Google Auth 2.0, Cors, cookie-parser, date-fns, moment.js, next-auth, react-date-range, react-dom
+#### Tools- VSC, MongoDB Cluster, NPM, Vercel, Google developer console
